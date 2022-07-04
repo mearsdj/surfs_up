@@ -10,7 +10,11 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 
 #setting up db engine for app
-engine = create_engine('sqlite:///hawaii.sqlite')
+#https://stackoverflow.com/questions/34009296/using-sqlalchemy-session-from-flask-raises-sqlite-objects-created-in-a-thread-c
+#used check_same_thread=False to avoid error:
+#sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 10596 and this is thread id 8880.
+
+engine = create_engine('sqlite:///hawaii.sqlite?check_same_thread=False')
 
 #reflect db into classes
 Base = automap_base()
