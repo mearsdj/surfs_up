@@ -26,7 +26,7 @@ June and December temperatures in Hawaii:
 | ![June Temps](June_Temp_Stats.png) | ![December Temps](Dec_Temp_Stats.png) |
 
 - There are `183` more temperature observations for June than December (data end date is August 23 2017)
-- June mean temperatures are just shy of `4&deg;F` higher than December
+- June mean temperatures are just shy of 4&deg;F higher than December
 - December temperatures are `more variable` than June, as seen in the higher standard deviation in December, at 3.75&deg;F
 - December temperatures show `greater spread` between min and max temps, and, as shown in the below December Temp Boxplot, there are twice as many donwside outliers as June shows.
 - The observed June temperatures have a slight negative or left skew
